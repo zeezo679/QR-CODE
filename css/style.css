@@ -1,0 +1,93 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+
+/* medium */
+@media (min-width:992px){
+    .container{
+        width: 978px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+/* start qr code  */
+
+.main{
+    margin: 130px auto;
+    background-color: #eee;
+    width: 280px;
+    height: 470px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+
+
+.main .image{
+    border-top-left-radius: 20px;
+    text-align: center;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .image img{
+    border-radius: 10px;
+    transform: rotate(0);
+    transition: 1s ease;
+}
+
+
+.main .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main .text h1{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.main .text p{
+    color: #777;
+    font-size: 14px;
+}
+
+
+svg{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+/* end qr code  */
